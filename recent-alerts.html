@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Alerts - Rakshita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="recent-alerts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Rakshita</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="live-map.html">Live SOS Map</a></li>
+                <li><a href="recent-alerts.html" class="active">Recent Alerts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="alerts-header">
+        <div class="container">
+            <h1>Recent Alerts</h1>
+            <p>All SOS triggers in the last 24 hours with detailed information</p>
+            <div class="status-indicator">
+                <div class="status-dot active"></div>
+                <span>Real-time updates active</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter and Search Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search by name, location, or message...">
+                </div>
+                <div class="filter-options">
+                    <select id="statusFilter">
+                        <option value="all">All Status</option>
+                        <option value="active">Active</option>
+                        <option value="resolved">Resolved</option>
+                    </select>
+                    <select id="timeFilter">
+                        <option value="24h">Last 24 Hours</option>
+                        <option value="12h">Last 12 Hours</option>
+                        <option value="6h">Last 6 Hours</option>
+                        <option value="1h">Last Hour</option>
+                    </select>
+                    <button id="exportBtn" class="export-btn">
+                        <i class="fas fa-download"></i>
+                        Export
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alerts Table Section -->
+    <section class="alerts-table-section">
+        <div class="container">
+            <div class="table-container">
+                <div class="table-header">
+                    <h3>SOS Alerts</h3>
+                    <div class="table-stats">
+                        <span id="totalAlerts">0</span> Total Alerts
+                    </div>
+                </div>
+                
+                <div class="table-wrapper">
+                    <table class="alerts-table">
+                        <thead>
+                            <tr>
+                                <th>User Name</th>
+                                <th>Location</th>
+                                <th>Time of Alert</th>
+                                <th>Status</th>
+                                <th>Message</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alertsTableBody">
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button id="prevPage" class="page-btn" disabled>
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <div class="page-numbers">
+                        <span id="currentPage">1</span> of <span id="totalPages">1</span>
+                    </div>
+                    <button id="nextPage" class="page-btn">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Update Indicator -->
+    <section class="update-indicator">
+        <div class="container">
+            <div class="update-status">
+                <div class="update-dot"></div>
+                <span>Last updated: <span id="lastUpdate">Just now</span></span>
+                <button id="refreshBtn" class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Rakshita</span>
+                    </div>
+                    <p>Your safety is our priority. Stay connected, stay safe.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="live-map.html">Live Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@rakshita.com</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rakshita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="recent-alerts.js"></script>
+</body>
+</html>

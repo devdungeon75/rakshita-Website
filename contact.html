@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Helplines - Rakshita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Rakshita</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="live-map.html">Live SOS Map</a></li>
+                <li><a href="recent-alerts.html">Recent Alerts</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="contact-header">
+        <div class="container">
+            <h1>Contact & Helplines</h1>
+            <p>Quick and reliable support when you need it most</p>
+        </div>
+    </section>
+
+    <!-- Emergency Numbers Section -->
+    <section class="emergency-section">
+        <div class="container">
+            <h2>Emergency Numbers</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Police</h3>
+                    <div class="emergency-number">100</div>
+                    <p>24/7 Emergency Response</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h3>Ambulance</h3>
+                    <div class="emergency-number">108</div>
+                    <p>Medical Emergency Services</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <h3>Fire Department</h3>
+                    <div class="emergency-number">101</div>
+                    <p>Fire & Rescue Services</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Women Helpline</h3>
+                    <div class="emergency-number">1091</div>
+                    <p>Women Safety Support</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Child Helpline</h3>
+                    <div class="emergency-number">1098</div>
+                    <p>Child Protection Services</p>
+                </div>
+                <div class="emergency-card">
+                    <div class="emergency-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Senior Citizen</h3>
+                    <div class="emergency-number">14567</div>
+                    <p>Elder Care Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>support@rakshita.com</p>
+                    <p>Response within 2 hours</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p>+91 98765 43210</p>
+                    <p>24/7 Helpline</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Available on website</p>
+                    <p>Instant support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Form Section -->
+    <section class="support-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Quick Support Form</h2>
+                <p>Submit your inquiries or issues and we'll get back to you promptly</p>
+                
+                <form id="supportForm" class="support-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="">Select Category</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="billing">Billing & Payment</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="bug">Bug Report</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Describe your issue or inquiry in detail..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Our Support Team</h2>
+            <p>Meet the dedicated team behind Rakshita's support system</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Priya Sharma</h3>
+                    <p class="member-role">Support Manager</p>
+                    <p class="member-bio">Leading our support team with 5+ years of experience in emergency response systems.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Rahul Kumar</h3>
+                    <p class="member-role">Technical Support</p>
+                    <p class="member-bio">Expert in app troubleshooting and technical issues resolution.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Anjali Patel</h3>
+                    <p class="member-role">Customer Success</p>
+                    <p class="member-bio">Ensuring every user gets the best experience with Rakshita.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about using Rakshita</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I trigger an SOS alert?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply press the volume button 5 times quickly on your phone. The app will automatically detect this gesture and send an SOS alert to your emergency contacts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I add emergency contacts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Go to the app settings, select "Emergency Contacts", and tap the "+" button to add new contacts. You can add multiple trusted contacts who will receive your alerts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What happens when I trigger an SOS?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When you trigger an SOS, the app immediately shares your precise location with all your emergency contacts via SMS and push notifications. They can then take appropriate action.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my location data secure?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all location data is encrypted and only shared with your designated emergency contacts. We never store or share your location data with third parties.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I customize the SOS gesture?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, the SOS gesture is fixed to 5 volume button presses for reliability and quick access. We're working on customizable gestures for future updates.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I accidentally trigger an SOS?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can cancel an SOS alert within 10 seconds of triggering it. Simply tap the "Cancel" button that appears on your screen, and no alert will be sent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form Section -->
+    <section class="cta-form-section">
+        <div class="container">
+            <div class="cta-form-container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to receive updates about new features and safety tips</p>
+                
+                <form id="subscribeForm" class="subscribe-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="subscribeEmail" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <button type="submit" class="subscribe-btn">
+                            <i class="fas fa-bell"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Rakshita</span>
+                    </div>
+                    <p>Your safety is our priority. Stay connected, stay safe.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="live-map.html">Live Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@rakshita.com</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rakshita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
