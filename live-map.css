@@ -2,8 +2,8 @@
 
 /* Map Header */
 .map-header {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--maroon-flush) 0%, var(--claret) 100%);
+    color: var(--soft-peach);
     padding: 4rem 0 2rem;
     margin-top: 80px;
     text-align: center;
@@ -13,34 +13,37 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    color: var(--soft-peach);
 }
 
 .map-header p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    color: var(--soft-peach);
 }
 
 .status-indicator {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(238, 228, 233, 0.2);
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-weight: 500;
+    color: var(--soft-peach);
 }
 
 .status-dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #2ecc71;
+    background: var(--violet-red);
     animation: pulse 2s infinite;
 }
 
 .status-dot.active {
-    background: #2ecc71;
+    background: var(--violet-red);
 }
 
 /* Map Section */
@@ -59,13 +62,13 @@
 .map {
     height: 100%;
     width: 100%;
-    background: #f8f9fa;
+    background: var(--soft-peach);
 }
 
 /* Alerts Sidebar */
 .alerts-sidebar {
-    background: white;
-    border-left: 1px solid #eee;
+    background: var(--white);
+    border-left: 1px solid var(--soft-peach);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -74,7 +77,7 @@
 
 .sidebar-header {
     padding: 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--soft-peach);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,13 +85,13 @@
 
 .sidebar-header h3 {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--thunder);
     margin: 0;
 }
 
 .alert-count {
-    background: #e74c3c;
-    color: white;
+    background: var(--maroon-flush);
+    color: var(--soft-peach);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -98,8 +101,8 @@
 /* Filter Section */
 .filter-section {
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid #eee;
-    background: #f8f9fa;
+    border-bottom: 1px solid var(--soft-peach);
+    background: var(--soft-peach);
 }
 
 .search-box {
@@ -112,21 +115,22 @@
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: #666;
+    color: var(--night-shadz);
 }
 
 .search-box input {
     width: 100%;
     padding: 0.8rem 1rem 0.8rem 2.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--puce);
     border-radius: 8px;
     font-size: 0.9rem;
     outline: none;
     transition: border-color 0.3s ease;
+    background: var(--white);
 }
 
 .search-box input:focus {
-    border-color: #e74c3c;
+    border-color: var(--maroon-flush);
 }
 
 .filter-options {
@@ -137,16 +141,16 @@
 
 .filter-options select {
     padding: 0.6rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--puce);
     border-radius: 6px;
     font-size: 0.9rem;
     outline: none;
-    background: white;
+    background: var(--white);
     cursor: pointer;
 }
 
 .filter-options select:focus {
-    border-color: #e74c3c;
+    border-color: var(--maroon-flush);
 }
 
 /* Alerts List */
@@ -158,19 +162,19 @@
 
 .alert-item {
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--soft-peach);
     cursor: pointer;
     transition: background-color 0.3s ease;
     position: relative;
 }
 
 .alert-item:hover {
-    background: #f8f9fa;
+    background: var(--soft-peach);
 }
 
 .alert-item.active {
-    background: #fff3cd;
-    border-left: 4px solid #e74c3c;
+    background: var(--soft-peach);
+    border-left: 4px solid var(--maroon-flush);
 }
 
 .alert-header {
@@ -182,7 +186,7 @@
 
 .alert-name {
     font-weight: 600;
-    color: #333;
+    color: var(--thunder);
     font-size: 1rem;
 }
 
@@ -194,23 +198,23 @@
 }
 
 .alert-status.active {
-    background: #d4edda;
-    color: #155724;
+    background: var(--violet-red);
+    color: var(--soft-peach);
 }
 
 .alert-status.resolved {
-    background: #d1ecf1;
-    color: #0c5460;
+    background: var(--puce);
+    color: var(--thunder);
 }
 
 .alert-location {
-    color: #666;
+    color: var(--night-shadz);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
 .alert-time {
-    color: #999;
+    color: var(--night-shadz);
     font-size: 0.8rem;
     display: flex;
     align-items: center;
@@ -218,20 +222,20 @@
 }
 
 .alert-message {
-    background: #f8f9fa;
+    background: var(--soft-peach);
     padding: 0.5rem;
     border-radius: 6px;
     margin-top: 0.5rem;
     font-size: 0.9rem;
-    color: #666;
-    border-left: 3px solid #e74c3c;
+    color: var(--night-shadz);
+    border-left: 3px solid var(--maroon-flush);
 }
 
 /* Update Indicator */
 .update-indicator {
-    background: #f8f9fa;
+    background: var(--soft-peach);
     padding: 1rem 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--puce);
 }
 
 .update-status {
@@ -245,13 +249,13 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #2ecc71;
+    background: var(--violet-red);
     animation: pulse 2s infinite;
 }
 
 .refresh-btn {
-    background: #e74c3c;
-    color: white;
+    background: var(--maroon-flush);
+    color: var(--soft-peach);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -264,7 +268,7 @@
 }
 
 .refresh-btn:hover {
-    background: #c0392b;
+    background: var(--claret);
 }
 
 .refresh-btn i {
@@ -283,18 +287,18 @@
 
 .leaflet-popup-content h3 {
     margin: 0 0 0.5rem 0;
-    color: #e74c3c;
+    color: var(--maroon-flush);
     font-size: 1.1rem;
 }
 
 .leaflet-popup-content p {
     margin: 0.2rem 0;
-    color: #666;
+    color: var(--night-shadz);
     font-size: 0.9rem;
 }
 
 .leaflet-popup-content .popup-time {
-    color: #999;
+    color: var(--night-shadz);
     font-size: 0.8rem;
     font-style: italic;
 }
@@ -303,18 +307,18 @@
 .empty-state {
     text-align: center;
     padding: 3rem 1.5rem;
-    color: #666;
+    color: var(--night-shadz);
 }
 
 .empty-state i {
     font-size: 3rem;
-    color: #ddd;
+    color: var(--puce);
     margin-bottom: 1rem;
 }
 
 .empty-state h4 {
     margin-bottom: 0.5rem;
-    color: #999;
+    color: var(--night-shadz);
 }
 
 .empty-state p {
@@ -326,12 +330,12 @@
 .loading-state {
     text-align: center;
     padding: 2rem;
-    color: #666;
+    color: var(--night-shadz);
 }
 
 .loading-state i {
     font-size: 2rem;
-    color: #e74c3c;
+    color: var(--maroon-flush);
     animation: spin 1s linear infinite;
     margin-bottom: 1rem;
 }
@@ -356,7 +360,7 @@
     
     .alerts-sidebar {
         border-left: none;
-        border-top: 1px solid #eee;
+        border-top: 1px solid var(--soft-peach);
     }
     
     .map-header h1 {
@@ -413,16 +417,16 @@
 }
 
 .alerts-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--soft-peach);
 }
 
 .alerts-list::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
+    background: var(--puce);
     border-radius: 3px;
 }
 
 .alerts-list::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+    background: var(--night-shadz);
 }
 
 /* Animation for new alerts */
@@ -443,9 +447,9 @@
 
 /* Pulse animation for active alerts */
 @keyframes alertPulse {
-    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
-    70% { box-shadow: 0 0 0 10px rgba(231, 76, 60, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+    0% { box-shadow: 0 0 0 0 rgba(210, 32, 91, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(210, 32, 91, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(210, 32, 91, 0); }
 }
 
 .alert-item.active {
