@@ -32,12 +32,16 @@ A modern, responsive website for the Rakshita Android app that displays real-tim
    - Pagination
    - Detailed alert information
 
-4. **Contact & Helplines** (`contact.html`)
+4. **About Us** (`about.html`)
+   - Mission and vision
+   - Team profiles
+   - Company story
+
+5. **Contact & Helplines** (`contact.html`)
    - Emergency numbers directory
    - Support contact information
    - Contact form with validation
    - FAQ section
-   - Team information
    - Newsletter subscription
 
 ## 🚀 Getting Started
@@ -57,6 +61,7 @@ Rakshita_web/
 ├── index.html              # Home page
 ├── live-map.html           # Live SOS Map page
 ├── recent-alerts.html      # Recent Alerts page
+├── about.html              # About page
 ├── contact.html            # Contact page
 ├── styles.css              # Main stylesheet
 ├── live-map.css            # Map page specific styles

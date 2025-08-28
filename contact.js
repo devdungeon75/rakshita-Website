@@ -6,18 +6,44 @@ function initFAQ() {
     
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
         
-        question.addEventListener('click', () => {
+        question.setAttribute('tabindex', '0');
+        question.setAttribute('role', 'button');
+        question.setAttribute('aria-expanded', 'false');
+        answer.setAttribute('aria-hidden', 'true');
+
+        function toggleItem() {
             const isActive = item.classList.contains('active');
             
             // Close all other FAQ items
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
+                const otherQuestion = otherItem.querySelector('.faq-question');
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+                if (otherQuestion && otherAnswer) {
+                    otherQuestion.setAttribute('aria-expanded', 'false');
+                    otherAnswer.setAttribute('aria-hidden', 'true');
+                }
             });
             
             // Toggle current item
             if (!isActive) {
                 item.classList.add('active');
+                question.setAttribute('aria-expanded', 'true');
+                answer.setAttribute('aria-hidden', 'false');
+            } else {
+                item.classList.remove('active');
+                question.setAttribute('aria-expanded', 'false');
+                answer.setAttribute('aria-hidden', 'true');
+            }
+        }
+
+        question.addEventListener('click', toggleItem);
+        question.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleItem();
             }
         });
     });

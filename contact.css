@@ -271,6 +271,13 @@
     gap: 2rem;
 }
 
+/* Show 4 team members per row on large screens */
+@media (min-width: 1200px) {
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .team-member {
     text-align: center;
     padding: 2rem;
@@ -295,11 +302,20 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
+    overflow: hidden;
 }
 
 .member-photo i {
     font-size: 2.5rem;
     color: var(--soft-peach);
+}
+
+/* Ensure member images fill the circular frame properly */
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .team-member h3 {
@@ -389,7 +405,7 @@
 
 .faq-item.active .faq-answer {
     padding: 0 1.5rem 1.5rem;
-    max-height: 200px;
+    max-height: 1000px;
 }
 
 .faq-answer p {
