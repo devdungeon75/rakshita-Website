@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "rakshita-website"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "rakshita-website-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

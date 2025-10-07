@@ -1,3 +1,7 @@
+// Importing firebase
+import { db, auth } from "./firebase-config.js";
+
+
 // Mobile Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');

@@ -1,0 +1,239 @@
+[debug] [2025-10-07T08:01:07.468Z] ----------------------------------------------------------------------
+[debug] [2025-10-07T08:01:07.470Z] Command:       C:\Users\anike\AppData\Local\nvm\nodejs\node.exe C:\Users\anike\AppData\Local\nvm\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-10-07T08:01:07.470Z] CLI Version:   13.35.1
+[debug] [2025-10-07T08:01:07.470Z] Platform:      win32
+[debug] [2025-10-07T08:01:07.471Z] Node Version:  v18.20.8
+[debug] [2025-10-07T08:01:07.471Z] Time:          Tue Oct 07 2025 13:31:07 GMT+0530 (India Standard Time)
+[debug] [2025-10-07T08:01:07.472Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-10-07T08:01:07.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-07T08:01:07.477Z] > authorizing via signed-in user (smartattendancegroup8@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Rakshita\rakshita-Website
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-10-07T08:02:35.790Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:35.790Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:35.793Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-10-07T08:02:36.526Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-10-07T08:02:36.526Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project rakshita-group-8 (Rakshita) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-10-07T08:02:42.467Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:42.468Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:42.468Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/rakshita-group-8/billingInfo [none]
+[debug] [2025-10-07T08:02:44.043Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/rakshita-group-8/billingInfo 200
+[debug] [2025-10-07T08:02:44.043Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/rakshita-group-8/billingInfo {"name":"projects/rakshita-group-8/billingInfo","projectId":"rakshita-group-8","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-10-07T08:02:44.044Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:44.044Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:44.044Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com [none]
+[debug] [2025-10-07T08:02:44.044Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:02:45.994Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com 200
+[debug] [2025-10-07T08:02:45.994Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-10-07T08:02:45.995Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:45.995Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:45.995Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-10-07T08:02:45.996Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:02:47.919Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-10-07T08:02:47.920Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-10-07T08:02:57.927Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:57.927Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:57.927Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com [none]
+[debug] [2025-10-07T08:02:57.927Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:02:59.705Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com 200
+[debug] [2025-10-07T08:02:59.706Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] i  If you'd like to add the generated SDK to your app later, run firebase init dataconnect:sdk 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/rakshita-group-8/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-10-07T08:02:59.722Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:59.722Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:02:59.722Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/firestore.googleapis.com [none]
+[debug] [2025-10-07T08:02:59.722Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/firestore.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:03:01.461Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/firestore.googleapis.com 200
+[debug] [2025-10-07T08:03:01.461Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/firestore.googleapis.com [omitted]
+[debug] [2025-10-07T08:03:01.461Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:03:01.461Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:03:01.461Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default) [none]
+[debug] [2025-10-07T08:03:01.780Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default) 200
+[debug] [2025-10-07T08:03:01.780Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default) {"name":"projects/rakshita-group-8/databases/(default)","uid":"f4dacf1f-9cd9-48d7-a236-434bee569ba2","createTime":"2025-05-15T05:21:02.402288Z","updateTime":"2025-05-15T05:21:02.402288Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-10-07T07:03:02.813483Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"realtimeUpdatesMode":"REALTIME_UPDATES_ENABLED","etag":"IPzBovrPkZADMLC1/PPdpI0D"}
+[debug] [2025-10-07T08:03:01.780Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-10-07T08:03:01.780Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-10-07T08:03:01.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-07T08:03:01.780Z] > authorizing via signed-in user (smartattendancegroup8@gmail.com)
+[debug] [2025-10-07T08:03:01.780Z] [iam] checking project rakshita-group-8 for permissions ["firebase.projects.get"]
+[debug] [2025-10-07T08:03:01.781Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:03:01.781Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:03:01.781Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions [none]
+[debug] [2025-10-07T08:03:01.781Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:03:01.781Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-07T08:03:02.421Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions 200
+[debug] [2025-10-07T08:03:02.421Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-10-07T08:04:46.392Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:46.392Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:46.393Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/rakshita-group-8/releases pageSize=10&pageToken=
+[debug] [2025-10-07T08:04:47.889Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/rakshita-group-8/releases 200
+[debug] [2025-10-07T08:04:47.889Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/rakshita-group-8/releases {"releases":[{"name":"projects/rakshita-group-8/releases/cloud.firestore","rulesetName":"projects/rakshita-group-8/rulesets/81c3e370-7806-425e-8f47-36a4e1655a0e","createTime":"2025-05-15T05:21:11.723012Z","updateTime":"2025-06-14T05:29:24.168058Z"}]}
+[debug] [2025-10-07T08:04:47.889Z] Found ruleset: projects/rakshita-group-8/rulesets/81c3e370-7806-425e-8f47-36a4e1655a0e
+[debug] [2025-10-07T08:04:47.890Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:47.890Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:47.890Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/rakshita-group-8/rulesets/81c3e370-7806-425e-8f47-36a4e1655a0e [none]
+[debug] [2025-10-07T08:04:49.275Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/rakshita-group-8/rulesets/81c3e370-7806-425e-8f47-36a4e1655a0e 200
+[debug] [2025-10-07T08:04:49.275Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/rakshita-group-8/rulesets/81c3e370-7806-425e-8f47-36a4e1655a0e [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-10-07T08:04:49.282Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:49.282Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:49.282Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:49.283Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:04:49.283Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-10-07T08:04:49.284Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-10-07T08:04:49.495Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-10-07T08:04:49.495Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-10-07T08:04:49.502Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-10-07T08:04:49.502Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/rakshita-group-8/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/rakshita-group-8/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-10-07T08:05:53.951Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-07T08:05:53.951Z] > authorizing via signed-in user (smartattendancegroup8@gmail.com)
+[debug] [2025-10-07T08:05:53.952Z] [iam] checking project rakshita-group-8 for permissions ["firebase.projects.get"]
+[debug] [2025-10-07T08:05:53.952Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:53.952Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:53.952Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions [none]
+[debug] [2025-10-07T08:05:53.952Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:05:53.952Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-07T08:05:55.572Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions 200
+[debug] [2025-10-07T08:05:55.572Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-07T08:05:55.573Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:55.573Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:55.573Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:55.573Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:55.573Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-10-07T08:05:55.573Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:05:55.575Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-10-07T08:05:55.575Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:05:57.334Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com 200
+[debug] [2025-10-07T08:05:57.334Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-10-07T08:05:57.334Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:57.334Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:05:57.334Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-10-07T08:05:57.334Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:05:57.336Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com 200
+[debug] [2025-10-07T08:05:57.336Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-10-07T08:05:59.274Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-10-07T08:05:59.274Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-10-07T08:06:09.281Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:06:09.282Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:06:09.282Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-10-07T08:06:09.282Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:06:11.254Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com 200
+[debug] [2025-10-07T08:06:11.254Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.21.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project undefined
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-10-07T08:09:09.347Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-07T08:09:09.348Z] > authorizing via signed-in user (smartattendancegroup8@gmail.com)
+[debug] [2025-10-07T08:09:09.348Z] [iam] checking project rakshita-group-8 for permissions ["firebase.projects.get"]
+[debug] [2025-10-07T08:09:09.348Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:09:09.348Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:09:09.348Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions [none]
+[debug] [2025-10-07T08:09:09.348Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:09:09.348Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-07T08:09:10.918Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions 200
+[debug] [2025-10-07T08:09:10.918Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/rakshita-group-8:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-10-07T08:09:10.919Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:09:10.919Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:09:10.919Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:09:10.919Z] Checked if tokens are valid: true, expires at: 1759827605109
+[debug] [2025-10-07T08:09:10.919Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-10-07T08:09:10.919Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:09:10.920Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-10-07T08:09:10.920Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/rakshita-group-8
+[debug] [2025-10-07T08:09:12.740Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com 200
+[debug] [2025-10-07T08:09:12.740Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-10-07T08:09:12.752Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com 200
+[debug] [2025-10-07T08:09:12.752Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/rakshita-group-8/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
